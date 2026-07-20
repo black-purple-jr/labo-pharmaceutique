@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 85dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(160, 235, 160));
+}
+
+.error{
+  position: fixed;
+  top: 30px;
+  color: red;
+  font-size: 1.2em;
+}
+
+form{
+  width: 32dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 3px 3px 100px 15px rgb(96, 155, 96);
+}
+
+form input{
+  height: 35px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+  font-size: 1.05em;
+}
+
+form button{
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.05em;
+  background-color: rgb(47, 112, 47);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+form a, form h2{
+  color: rgb(47, 112, 47);
+  text-align: center;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 1.6em;
+}

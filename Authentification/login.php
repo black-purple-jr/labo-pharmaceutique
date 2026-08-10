@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: ../"); // cette méthode vas automatiquement a le fichhier index; route = localhost/fil_rouge/ ; donc cette deuxième méthode nous donne un route plus propre.
         exit;
       } else {
-        $error_message = "Email ou mot de passe incorrect.";
+        $error_message = "Mot de passe incorrect.";
       }
     } else {
       $error_message = "Email incorrect.";

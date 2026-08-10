@@ -71,7 +71,7 @@ if (!isset($_SESSION["user_id"])) {
               <path d="M8.5 2h7" />
             </svg>
           </div>
-          <div class="text">Gérer et manipuler les matières premières et leurs dosages dans le médicaments</div>
+          <div class="text">Gérer et manipuler les matières premières et leurs dosages dans les médicaments</div>
         </div>
       </a>
       <a href="./Pages/stocks.php">
@@ -85,7 +85,7 @@ if (!isset($_SESSION["user_id"])) {
               <path d="M18 17.5V9.4" />
             </svg>
           </div>
-          <div class="text">Calculer et gérer les stocks de médicaments et des matières premières</div>
+          <div class="text">Calculer et gérer les stocks des médicaments et des matières premières</div>
         </div>
       </a>
       <a href="./Pages/nomenclature.php">
@@ -100,7 +100,7 @@ if (!isset($_SESSION["user_id"])) {
               <path d="M8 16h.01" />
             </svg>
           </div>
-          <div class="text">Gérer le dosage et les composition des médicaments</div>
+          <div class="text">Gérer le dosage et les compositions des médicaments</div>
         </div>
       </a>
       <a href="./Pages/besoin.php">

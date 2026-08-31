@@ -12,8 +12,8 @@ if (!isset($_SESSION["user_id"])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil - Labo Pharmaceutique</title>
-  <link rel="stylesheet" href="Styles/main.css">
-  <link rel="icon" type="image/svg+xml" href="Assets/icon.svg">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
 </head>
 
 <body>
@@ -29,14 +29,14 @@ if (!isset($_SESSION["user_id"])) {
       </h1>
     </a>
     <div class="nav-links">
-      <a href="http://localhost/fil_rouge/" class="active">Accueil</a>
-      <a href="Pages/medicaments.php">Médicaments</a>
-      <a href="Pages/matiere_premiere.php">Matières premières</a>
-      <a href="Pages/stocks.php">Stocks</a>
-      <a href="Pages/nomenclature.php">Nomenclature</a>
-      <a href="Pages/besoin.php">Besoin</a>
-      <a href="Pages/besoin_mp.php">Besoin MP</a>
-      <a href="Authentification/logout.php" id="logout" title="Se déconnecter" class="logout">
+      <a href="" class="active">Accueil</a>
+      <a href="pages/medicaments.php">Médicaments</a>
+      <a href="pages/matiere_premiere.php">Matières premières</a>
+      <a href="pages/stocks.php">Stocks</a>
+      <a href="pages/nomenclature.php">Nomenclature</a>
+      <a href="pages/besoin.php">Besoin</a>
+      <a href="pages/besoin_mp.php">Besoin MP</a>
+      <a href="authentification/logout.php" id="logout" title="Se déconnecter" class="logout">
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 112, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out">
           <path d="m16 17 5-5-5-5" />
           <path d="M21 12H9" />

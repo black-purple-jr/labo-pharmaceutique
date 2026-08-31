@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "/Plan.php";
+require "./Plan.php";
 
 class DAO implements Plan
 {

@@ -313,9 +313,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `password_hash`) VALUES
-(9, 'dal.dakirallah@gmail.com', '$2y$10$lZ2X3AdScaaiRJPyWZmii.KZBWd/BTiQHJ9eF.890f4ZJOw2UhukW');
-
 -- --------------------------------------------------------
 
 --

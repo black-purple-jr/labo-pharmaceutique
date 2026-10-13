@@ -1,5 +1,5 @@
 <?php
-require "./Plan.php";
+require "Plan.php";
 
 class DAO implements Plan
 {
@@ -14,6 +14,7 @@ class DAO implements Plan
       $dsn = "mysql:host=$server;dbname=$database";
       $pdo = new PDO($dsn, $username, $password);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
       return $pdo;
     } catch (Exception $e) {
       echo "Erreur de connexion: " . $e->getMessage();
@@ -26,9 +27,11 @@ class DAO implements Plan
   {
     $pdo = self::connect();
     $query = "SELECT * FROM users WHERE email = ?";
+
     $stmt = $pdo->prepare($query);
     $stmt->execute([$email]);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
     return $result;
   }
 
@@ -36,8 +39,10 @@ class DAO implements Plan
   {
     $pdo = self::connect();
     $query = "INSERT INTO users (email, password_hash) VALUES (?, ?)";
+
     $stmt = $pdo->prepare($query);
     $result = $stmt->execute([$email, $passwd]);
+
     return $result;
   }
 
@@ -46,8 +51,10 @@ class DAO implements Plan
   {
     $pdo = self::connect();
     $query = "INSERT INTO medicament (Reference_P, Designation, Descriptif, Forme, PPM, T_Lot) VALUES (?, ?, ?, ?, ?, ?)";
+
     $stmt = $pdo->prepare($query);
     $result = $stmt->execute([$reference_p, $designation, $descriptif, $forme, $ppm, $t_lot]);
+
     return $result;
   }
 
